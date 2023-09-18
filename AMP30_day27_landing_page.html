@@ -61,10 +61,7 @@
       <div class="col-md-6 offset-md-3 text-center"> 
         %%[ IF NOT empty(@success) THEN ]%%
           <p class="alert alert-success">%%=v(@success)=%%</p>
-        %%[ ELSE 
-        upsertData(@survey, 1, "SubscriberKey", @subscriberKey, "NPS", @nps, "Feedback", @feedback )
-        
-        
+        %%[ ELSE      
         ]%%
         
         <form method="post">
