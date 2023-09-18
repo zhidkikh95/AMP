@@ -17,9 +17,6 @@
   /* Check if form has been submitted */
   IF RequestParameter("submitted") == "true" THEN  
     
-    /* Upsert data to the Appointments data extension */ 
-    upsertData(@survey, 1, "SubscriberKey", @subscriberKey, "NPS", @nps, "Feedback", @feedback )  
-
     /* Display success message */  
     SET @success = "Thank you for your participation!"
   ENDIF
